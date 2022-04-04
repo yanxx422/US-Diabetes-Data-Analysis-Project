@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+    <meta name="author" content="themefisher.com">
+
+    <title> Personal Behavior and Diabetes</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="top">
+
+<header>
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                        <li class="list-inline-item"><i class="icofont-support-faq mr-2"></i>Cool Kids</li>
+                        <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>COSC-587</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icon.png" height="60" width="60" alt="" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icofont-navigation-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarmain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <!--			-->
+                    <li class="nav-item"><a class="nav-link" href="data-collection.html">Data Collection</a></li>
+                    <!--			    <li class="nav-item"><a class="nav-link" href="service.html">Analysis</a></li>-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="beverage.html">Beverage sales and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="state-policy.html">State Policy and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="income.html">Inequalities And Diabetes</a></li>
+                            <li><a class="dropdown-item" href="lifestyle.html">Healthy LifeStyle and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="reddit.html">Reddit Community Analysis </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown03"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conclusions <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="conclusion.html">Conclusions</a></li>
+                            <li><a class="dropdown-item" href="ethical-concerns.html">Ethical Concerns</a></li>
+                            <li><a class="dropdown-item" href="reference.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block text-center">
+                    <span class="text-white">Analysis</span>
+                    <h1 class="text-capitalize mb-5 text-lg">Personal Healthy Behavior and Obesity</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section blog-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11">
+                <div class="row">
+                    <div class="col-lg-12 mb-5">
+                        <div class="single-blog-item">
+                            <!--                            <img src="images/blog/blog-1.jpg" alt="" class="img-fluid">-->
+
+                            <div class="blog-item-content mt-5">
+
+                                <!--                                <h2 class="mb-4 text-md"><a href="blog-single.html">Healthy environment to care with-->
+                                <!--                                    modern equipment</a></h2>-->
+
+                                <h2>Life Styles and Diabetes</h2>
+                                <p class="lead mb-4"> Keeping a healthy life style is important for all people. For people who are diagnosed with diabetes, though the arsenal of drugs
+                                    for mainting blood sugar continues to expand, people can still achieve better levels with less medication if they lose weight, eat right, and
+                                    engage in physical activity. For others, lifestyle changes can help with prevention of diabetes, and many more dangerous conditions like heart disease.
+                                    Eating real food like fruits and vegetables, losing weight and becoming more physically active can help with blood sugar management and also improve
+                                    the quality of life.
+                                    But how do we quantify their impact on our health? Here is our attempt to figure it out.
+                                </p>
+                                <p class="lead mb-4">
+                                    First, we propose two hypothesis:
+                                </p>
+                                <p class="lead mb-4">Null hypothesis: There is no association between vegetable, fruit consumption, and obesity rate.</p>
+                                <p class="lead mb-4">Alternative hypothesis: There is an association between vegetable, fruit consumption, and obesity rate.</p>
+                                <p class="lead mb-4">To verify the hypothesis, we choose the <b>Linear Regression Model</b>. Besides, we also train <b>SVM</b>, <b>Naive Bayes</b> and <b>KNN</b> models on the data. SVM and KNN are suitable for such continuous variables while Naive Bayes can also be used if we divide the variables into different bins.</p>
+                                <img src="images/lifestyle.png"  width="1000"></img>
+
+                                <p class="lead mb-4">We train models using U.S. community survey data sets. At the same time, to find the relationship between lifestyle and obesity rates, we choose the following three columns: ​​percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week; percent of adults who report consuming fruit less than one time, consuming vegetables less than one time as the x-axis. For y, we choose the column: percent of adults who have obesity.
+                                </p>
+                                <p class="lead mb-4">After that, we use 10-fold cross-validation to test the accuracy of the algorithm. For each data set, divide the data set into ten, and take turns using 9 of them as training data and 1 as test data for experimentation. Each test will get the corresponding correct rate (or error rate).</p>
+                                <h3>Linear Regression</h3>
+                                <p class="lead mb-4">After training Linear Regression model on the data, we get the following result: </p>
+                                <img src="images/lifestyle-linear.png"  width="1000"></img>
+                                <p class="lead mb-4"> The R score is 0.234 which is small enough.  When coming to the coefficients, the result is kind of complex.
+                                    <b>For vegetable intake, we find there is no significant influence on obesity (-0.0871), which is quite counter-intuitive.</b>
+                                    The lower fruit consumption will bring out the high obesity rate. So do the weekly exercises.
+                                    In general, some of our hypotheses have been proved while some are not. Maybe aating vegetables could help us become healthy but cannot avoid obesity. Therefore, we cannot reject the null hypothesis.
+                                </p>
+
+                                <h3>KNN</h3>
+                                <p class="lead mb-4"> After cross validation, we have the score: 0.6796.</p>
+                                <p class="lead mb-4">  For the KNN model, the score is not good. We believe that the reason why the KNN score is not high is that the KNN method mainly relies on the limited neighboring samples around, rather than the method of discriminating the class domain to determine the category, and for the three attributes we selected, the intersection between them or There is not much overlap, resulting in a low KNN score. At the same time, our sample size is not high which only has thousands of data and the use of KNN may cause misclassification, and may also lead to a low final score.
+                                </p>
+                                <h3>Naive Bayes</h3>
+                                <p class="lead mb-4"> After cross validation, we have the score: 0.7154.</p>
+                                <p class="lead mb-4">   Since the Bayesian classifier assumes that the features are independent of each other, and in real life, people with more vegetables may also consume more fruits, so the attributes are not completely independent, which leads to the model's prediction There is a certain loss in accuracy. The Bayesian model also assumes that the feature characteristics meet the Gaussian distribution. In our data, because the amount of data is not large enough, the overall distribution of the data may not meet the Gaussian distribution, which will also bring a certain accuracy loss.
+                                </p>
+
+                                <h3>Hierarchical Clustering</h3>
+                                <p class="lead mb-4"> We plotted the hierarchical clustering dendrogram for different states to find similar behavioral patterns.
+                                </p>
+                                <img src="images/dendrogram_1.png"  width="800"></img>
+                                <p class="lead mb-4"> A part of sub clusters formed as shown below:
+                                </p>
+                                <img src="images/dendrogram_2.png"  width="800"></img>
+                                <p class="lead mb-4"> This figure suggests that people among these states have similar behavioral risk patterns,
+                                    such as obesity rate, physical activity and the likelihood of consuming more vegetables.
+                                     According to the most recent Behavioral Risk Factor Surveillance System data, most of them appeared
+                                     to be the US states with the highest diabetes rates (for example, West Virginia, Mississippi, Alabama, Arkansas):
+                                </p>
+
+                                <div class='tableauPlaceholder' id='viz1638574514825' style='position: relative'><noscript><a href='#'><img alt='U.S. State Diabetes Prevalence Rate Among Adults ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;Chronic-Disease&#47;stateprevelance&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Chronic-Disease&#47;stateprevelance' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;Chronic-Disease&#47;stateprevelance&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1638574514825');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+                                <p class="lead mb-4"> If we just plot the percentage of adults who engage in no leisure time physical activity, we can see that these southern
+                                    states are still have higher value, which confirms the clustering result.
+                                </p>
+
+                                <div class='tableauPlaceholder' id='viz1638575095776' style='position: relative'><noscript><a href='#'><img alt='Mean Percent of Adults Who Engae in No Laisure-time Physical Activity for U.S. States from 2011 to 2019 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;Behavirol-Risk-5-geo&#47;MeanPercentofAdultsWhoEngaeinNoLaisure-timePhysicalActivityforU_S_Statesfrom2011to2019&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Behavirol-Risk-5-geo&#47;MeanPercentofAdultsWhoEngaeinNoLaisure-timePhysicalActivityforU_S_Statesfrom2011to2019' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Be&#47;Behavirol-Risk-5-geo&#47;MeanPercentofAdultsWhoEngaeinNoLaisure-timePhysicalActivityforU_S_Statesfrom2011to2019&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1638575095776');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                <br>
+                                <h3>K-Means Clustering</h3>
+
+                                <p class="lead mb-4">
+                                    We also conducted K-means clustering on reaaranged chronic disease dataset, where each column contains the data for a
+                                    specific survey question. We would like to investigate the following question: diagnose prvalence rate, motality rate
+                                    due to diabetes, percent of diagnosed people who Take self-management courses, prevalence of high cholesterol among diagnosed diabetes.
+                                </p>
+                                <p class="lead mb-4">
+                                    We used Elbow method, which compares the average distance of the center of each point for different numbers of clusters. The plot is shown as below:
+                                </p>
+                                <img src="images/k-means-1.png"  ></img>
+
+                                <p class="lead mb-4">
+                                    The figure suggested that K = 4 is a solid choice. The model generates the following scatter plots:
+
+                                </p>
+
+                                <img src="images/k-means-2.png"  ></img>
+                                <p class="lead mb-4">
+                                    Cluster 2 has few data points that could be outliers. Overall it does a reasonable job, but there are a certain number of points that are hard to be separated as there are very dense regions. A parallel coordinate plot for the clusters and centroids are shown below:
+
+                                </p>
+
+                            </img>
+                            <img src="images/k-means-3.png"  width="800">
+                                <p class="lead mb-4">
+                                The high mortality rate is certainly positively related to the prevalence of high cholesterol with diagnosed diabertic patients, as the purple clusters have the lowest rankings of mortality and also lowest ranking of high cholesterol prevalence. Blue clusters represent a group that develops high cholesterol along with diabetes and most likely has depressive orders. The counter intuition is that as red and orange clusters suggest, certain groups of people take self-management courses, but somehow they don't manage to lower their high cholesterol, and the mortality rates still remain high.
+
+
+                                </p>
+
+
+
+
+
+
+
+
+                                <div class="mt-5 clearfix">
+                                    <ul class="float-left list-inline tag-option">
+                                        <li class="list-inline-item"><a href="#">Obesity</a></li>
+                                        <li class="list-inline-item"><a href="#">Behavior</a></li>
+                                        <li class="list-inline-item"><a href="#">Exercise</a></li>
+                                    </ul>
+
+                                    <ul class="float-right list-inline">
+                                        <li class="list-inline-item"> Share:</li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><i
+                                                class="icofont-facebook" aria-hidden="true"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><i
+                                                class="icofont-twitter" aria-hidden="true"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><i
+                                                class="icofont-pinterest" aria-hidden="true"></i></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank"><i
+                                                class="icofont-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Main jQuery -->
+<script src="plugins/jquery/jquery.js"></script>
+<!-- Bootstrap 4.3.2 -->
+<script src="plugins/bootstrap/js/popper.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/counterup/jquery.easing.js"></script>
+<!-- Slick Slider -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Counterup -->
+<script src="plugins/counterup/jquery.waypoints.min.js"></script>
+
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/counterup/jquery.counterup.min.js"></script>
+<!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".headerpage").load('header.html');
+        $(".footerpage").load("footer.html");
+    });
+</script>
+</body>
+</html>

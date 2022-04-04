@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+    <meta name="author" content="themefisher.com">
+
+    <title>Reddit Community Analysis</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Icon Font Css -->
+    <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+    <!-- Slick Slider  CSS -->
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="top">
+
+<d<header>
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                        <li class="list-inline-item"><i class="icofont-support-faq mr-2"></i>Cool Kids</li>
+                        <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>COSC-587</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icon.png" height="60" width="60" alt="" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icofont-navigation-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarmain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <!--			-->
+                    <li class="nav-item"><a class="nav-link" href="data-collection.html">Data Collection</a></li>
+                    <!--			    <li class="nav-item"><a class="nav-link" href="service.html">Analysis</a></li>-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="beverage.html">Beverage sales and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="state-policy.html">State Policy and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="income.html">Inequalities And Diabetes</a></li>
+                            <li><a class="dropdown-item" href="lifestyle.html">Healthy LifeStyle and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="reddit.html">Reddit Community Analysis </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown03"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conclusions <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="conclusion.html">Conclusions</a></li>
+                            <li><a class="dropdown-item" href="ethical-concerns.html">Ethical Concerns</a></li>
+                            <li><a class="dropdown-item" href="reference.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<section class="page-title bg-1">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block text-center">
+                    <span class="text-white">Analysis</span>
+                    <h1 class="text-capitalize mb-5 text-lg">Reddit Community Analysis</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-11">
+            <div class="row">
+                <div class="col-lg-12 mb-5">
+                    <div class="single-blog-item">
+                        <!--                            <img src="images/blog/blog-1.jpg" alt="" class="img-fluid">-->
+
+                        <div class="blog-item-content mt-5">
+
+                            <!--                                <h2 class="mb-4 text-md"><a href="blog-single.html">Healthy environment to care with-->
+                            <!--                                    modern equipment</a></h2>-->
+
+                            <h2>Text Analysis</h2>
+                            <p class="lead mb-4">In this part, we did Topic Modeling on the Reddit data set, which contains the submissions in subreddit “Diabetes” in the past three years.
+                                We used the LDA Algorithm to find prevalent topics in this diabetes patient community to find out what the patients are concerned about.
+                                Here are the Topic Word distributions and visualizations in the form of Word Cloud(set K=4):
+                            </p>
+                            <img src="images/topic1.png"  width="500"></img>
+                            <img src="images/topic3.png"  width="500"></img>
+                            <p class="lead mb-4">Topic 3 and Topic 1 seem very similar. After people get diagnosed with diabetes, they will go to Online communities like Reddit for help, including consulting other patients and sharing experience and emotions. However, they have slightly different focuses. Topic 1 focuses more on the information of diabetes, while Topic 3 pays more attention to the experience of diabetes. This indicates that Topic 1 is more for people to seek help and learn more information about diabetes, and Topic 3 is more for people to share their own experience of diabetes.</p>
+                            <img src="images/topic2.png"  width="500"></img>
+                            <img src="images/topic4.png"  width="500"></img>
+                            <p class="lead mb-4">In Topic2, people are talking about keeping a diet and reducing the sugar intake. “carbs”, “sugar”, and “glucose” are similar to each other. It shows that the model we have has a strong relation to diabetes since the word cloud tells that people care what they put in their body, especially sugar, which is a great contributor to diabetes. Also, blood and glucose are closed indicators for diabetes.</p>
+                            <p class="lead mb-4">In Topic4, the documents are associated with sensor, dexcom and insurance. DexCom, Inc. is a company that develops, manufactures, and distributes continuous glucose monitoring (CGM) systems for diabetes management. Cgm is also prevalent in this topic, which proves the significance of our Model. “Sensor”, “dexcom”, “cgm” here refer to the sensor systems for diabetes patients to control their body.</p>
+
+
+                            <h2>Network Analysis</h2>
+                            <img src="images/NetworkGraph.png"  width="1000"></img>
+                            <p class="lead mb-4">Our previous collected file: ‘reddit_comments.csv’ contains 232624 posts, we chose the first 500 posts to conduct the network analysis.For the above visualization, posts appear in blue and sized according to their respective number of connections, the labels are the corresponding post ids and are  only for posts.
+                                Influencers appear small and grey, and people who have more conenctions are highlighted in color. 
+                                With the network loaded in, we calculated the betweenness centrality and shows the 10 individuals with the highest value:</p>
+                            
+                            <img src="images/network1.png"  width="500"></img>
+                            <p class="lead mb-4">High betweeness centrialities suggest that theses individuals were important information brokers in the diabetes sub, as betweeness centrality is based on the assumption that the greater the number of shortest paths pass through a node, the more it acts as a broker.</p>
+                            <p class="lead mb-4">We also looked at the eivenvector centrality, which captures the highly-connected hubs in this network. The top 10 result is shown as below:
+                            </p>
+                            <img src="images/network_2.png"  width="500"></img>
+
+                            <p class="lead mb-4">Some of these individuals also appeared in the previous section, including the most central user ‘q80hs1’.However, some of the individuals with hight engivenctor centrality don’t have particularly high betweeness centrality, such as user ‘4thshift’. High eigenvector centrality score only indicate individuals create any paths between others, but not necessarily the shortest path. 
+
+                                To investigate whether a node’s neighbors tend to be connected to each other, we calculated and sorted the transitivity. The result of such relationships is measured by triangles. But the triangle scores are all 0, meaning that there are hardly any connections in the neighborhood.
+                                Clustering is measured via the local clustering coefficient, which is defined as the fraction of all pairs of a node’s neighbors that have an edge between them. The local clustering coefficient is also 0, which again indicates that the users are not well-connected.
+                            <p class="lead mb-4">
+                                The global clustering coefficient is 0, which confirms that the level of clustering or transitivity of this network it low.
+                                
+                                The density of this network is 0.00847, which shows that this network is considered sparse. 
+                                
+                            </P>
+                            <p class="lead mb-4">
+                                We then find the averaging connectivity over all nodes, which is 1.035680751173709. The result suggests that this network can be divided into disconnected parts by the removal of a single node. Overall the connectivity of this network is low. 
+                            </P>
+                            <p class="lead mb-4">
+                                The analysis suggests that diabetes sub users don’t have many connections with each other, this could be due to the nature of the reddit platform, as it functioned as a go-to place and people tend to leave comments without too many concerns as the other users are all strangers. Take diabetes subreddit as an example, this is still a relatively sparse network, but people can get useful information as they communicate about how to use blood sugar monitoring devices, and also talk about their feelings and experience. Medical information is relatively private and sensitive information, sometimes people choose not to discuss it with their families, but instead interact with peers online. For many people, such a forum provides comfortable emotional distance and perceived support [1]. The disease itself is a burden and sharing information and feelings with peers may help patients feel relieved without compounding the issue on others. This might be one explanation as to why this social network is sparse but still is very helpful for patients. As our visualization suggests, people tend to interact with others more depending on the content of the post, and less depending on if they know the person or not. The average degree of the network is 2.4, which is relatively low. It is logical to assume the community is formed based on the discussion under similar topics, instead of people’s familiarity with each other. 
+                            </P>
+                                
+                                
+
+                        </p>
+                            
+
+                                
+
+
+                            <div class="mt-5 clearfix">
+                                <ul class="float-left list-inline tag-option">
+                                    <li class="list-inline-item"><a href="#">Obesity</a></li>
+                                    <li class="list-inline-item"><a href="#">Behavior</a></li>
+                                    <li class="list-inline-item"><a href="#">Exercise</a></li>
+                                </ul>
+
+                                <ul class="float-right list-inline">
+                                    <li class="list-inline-item"> Share:</li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i
+                                            class="icofont-facebook" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i
+                                            class="icofont-twitter" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i
+                                            class="icofont-pinterest" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" target="_blank"><i
+                                            class="icofont-linkedin" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main jQuery -->
+<script src="plugins/jquery/jquery.js"></script>
+<!-- Bootstrap 4.3.2 -->
+<script src="plugins/bootstrap/js/popper.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/counterup/jquery.easing.js"></script>
+<!-- Slick Slider -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Counterup -->
+<script src="plugins/counterup/jquery.waypoints.min.js"></script>
+
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<script src="plugins/counterup/jquery.counterup.min.js"></script>
+<!-- Google Map -->
+<script src="plugins/google-map/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
+
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".headerpage").load('header.html');
+        $(".footerpage").load("footer.html");
+    });
+</script>
+</body>
+</html>

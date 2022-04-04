@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Orbitor,business,company,agency,modern,bootstrap4,tech,software">
+  <meta name="author" content="themefisher.com">
+
+  <title>Retails and Diabetes</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Icon Font Css -->
+  <link rel="stylesheet" href="plugins/icofont/icofont.min.css">
+  <!-- Slick Slider  CSS -->
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<d<header>
+    <div class="header-top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <ul class="top-bar-info list-inline-item pl-0 mb-0">
+                        <li class="list-inline-item"><i class="icofont-support-faq mr-2"></i>Cool Kids</li>
+                        <li class="list-inline-item"><i class="icofont-location-pin mr-2"></i>COSC-587</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navigation" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icon.png" height="60" width="60" alt="" class="img-fluid">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain"
+                    aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icofont-navigation-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarmain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Introduction</a>
+                    </li>
+                    <!--			-->
+                    <li class="nav-item"><a class="nav-link" href="data-collection.html">Data Collection</a></li>
+                    <!--			    <li class="nav-item"><a class="nav-link" href="service.html">Analysis</a></li>-->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown02"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Analysis <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="beverage.html">Beverage sales and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="state-policy.html">State Policy and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="income.html">Inequalities And Diabetes</a></li>
+                            <li><a class="dropdown-item" href="lifestyle.html">Healthy LifeStyle and Diabetes</a></li>
+                            <li><a class="dropdown-item" href="reddit.html">Reddit Community Analysis </a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="department.html" id="dropdown03"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conclusions <i
+                                class="icofont-thin-down"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                            <li><a class="dropdown-item" href="conclusion.html">Conclusions</a></li>
+                            <li><a class="dropdown-item" href="ethical-concerns.html">Ethical Concerns</a></li>
+                            <li><a class="dropdown-item" href="reference.html">References</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<body id="top">
+
+
+
+
+<section class="page-title bg-1">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block text-center">
+			<span class="text-white">Analysis</span>
+          <h1 class="text-capitalize mb-5 text-lg">Retail Food and Diabetes</h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section blog-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-11">
+                <div class="row">
+	<div class="col-lg-12 mb-5">
+		<div class="single-blog-item">
+
+			<div class="blog-item-content mt-5">
+				<div class="blog-item-meta mb-3">
+
+				</div> 
+
+				<h2 class="mb-4 text-md">How does Beverages Affect our Health? </h2>
+				<p class="lead mb-4 font-weight-normal text-black">
+                    Every day we have many opportunities to decide what to put in our mouth.  But will these choices really affect the chances of getting chronic diseases like diabetes?
+                    We tried to answer this question in this experiment utilizing our weekly retail food sales dataset. </p>
+                    <p class="lead mb-4 font-weight-normal text-black">
+                    The retail sales data has 11 consumption categories (alcohol, beverages, commercially prepared items, dairy, fats and oils, fruits, grains, meats eggs and nuts, other, sugar and sweeteners, vegetables) recorded for all states, and it has volume sales with specific dates from 2019 to 2021.
+                    The numerical value is transformed to binary data (1 for high diabetes prevalence, 0 for low diabetes prevalence) using binary split based on min and max for the classification task, as well as producing the ROC curve.
+
+                    </p>
+                    <p class="lead mb-4 font-weight-normal text-black">
+                    The null hypothesis is that beverage sales would not affect a region’s diabetes prevalence rate, the alternative hypothesis is that beverage sales do affect states’ diabetes prevalence rate.
+                    
+                
+				</p>
+				<p class="lead mb-4">We chose to use the decision tree and random forest model to see the contribution of each feature. 
+					We also continued the linear regression model as comparison. At first, we generated a heatmap to see their correlatoins: </p>
+
+
+				<img src="images/heatmap_retail.png" title="Heatmap of Retail Sales and Diabetes Prevalence"></img>
+				<p class="lead mb-4 font-weight-normal text-black">It is noticeable that the consumption of beverages is highly correlated with prevalence and has the highest correlation coefficient of 0.62. Sugar and sweeteners and fats and oils’ coefficients are also relatively high(0.6 and 0.48 respectively). The intuition is that people who have a higher consumption of beverages are more likely to develop diabetes, hence the higher diabetes prevalence rate. The heatmap result preliminarily confirms the alternative hypothesis.
+                </p>
+				<h3>Using Retail Sales Data to Predict Diabetes Prevalence -- Random Forest Model</h3>
+				<p class="lead mb-4 font-weight-normal text-black">
+					We then developed a random forest model and randomized search over the hyperparameters, the default is 5 fold cross-fold validation. The parameters of the estimator used to apply these methods are optimized by cross-validated search over parameter settings. The result is shown as below:
+				</p>
+				<img src="images/randomforest.png"></img>
+				<p class="lead mb-4 font-weight-normal text-black">We also measured feature’s importance by looking at how much the tree nodes that use that feature reduce impurity on average (across all trees in the forest).</p>
+				<img src="images/feature_importance.png"></img>
+				<p class="lead mb-4 font-weight-normal text-black">As the figure suggests, beverage volume sales per capita contributed the most to the diabetes prevalence rate in this model.</p>
+
+                <p class="lead mb-4 font-weight-normal text-black"> The confusion matrix of random forest is generated as below: </p>
+
+                <img src="images/confusion_matrix.png"></img>
+
+                <p class="lead mb-4 font-weight-normal text-black"> For the wrong predictions, the model doesn’t have a bias toward false positives and false negatives.
+                </p>
+                <h3>Using Retail Sales Data to Predict Diabetes Prevalence -- Decision Tree Model</h3>
+                <p class="lead mb-4 font-weight-normal text-black">For the decision tree classification, we used grid search for hyperparameter tuning. We performed a grid search on the classifier using the parameters and a scorer.The parameters of the estimator used to apply these methods are optimized by cross-validated grid-search over a parameter grid. The default cross fold validation is 5 fold. 
+
+                The result is shown as follows:
+                </p>
+                <img src="images/decision_tree_1.png"></img>
+                <p class="lead mb-4 font-weight-normal text-black"> Testing f1 score is less than training f1 score, which suggests underfitting. This is inevitable given the relatively small size of this dataset. Though F1 and recall scores are higher compared to random forest classifier, the accuracy and precision score are lower.
+
+                The feature importance chart is shown as below:
+                </p>
+
+                <img src="images/decision_tree_2.png"></img>
+
+                <p class="lead mb-4 font-weight-normal text-black">Unlike the random forest model, only three features are contributing to the decision tree model, and the model is mainly affected by beverage volume sales per capita.
+                    <br>
+                    The confusion matrix is generated as bellow:
+                </p>
+                <img src="images/decision_tree_3.png"></img>
+                <p class="lead mb-4 font-weight-normal text-black">The model is especially weak in predicting low prevalence data where it predicts the opposite. There is a precision and recall tradeoff in the model, as reducing the threshold, precision decreases and recall increases.
+
+                    <br>
+                    We combined two model’s ROC curves in the following figure:
+
+                </p>
+                <img src="images/decision_tree_4.png"></img>
+                <p class="lead mb-4 font-weight-normal text-black">For ROC curves, the ROC curve shows the trade-off between sensitivity (or TPR) and specificity (1 – FPR). Classifiers that give curves closer to the top-left corner indicate better performance. From the ROC curve of both models, both show the tendency towards the top-left corner, which means both models perform well. The decision tree model’s ROC curve is slightly closer to the top-left corner, but not too much, hence we could only say that the decision tree model is slightly superior to the random forest classifier. 
+                </p>
+
+    
+				<h3>Test the Importance of different categories on diabetes --- Linear Regression </h3>
+				<p class="lead mb-4 font-weight-normal text-black">We also tested this dataset using linear regression. The result is summarized as follows:</p>
+				<img src="images/linear_regression_retail.png"></img>
+				<p class="lead mb-4 font-weight-normal text-black">The p-value of beverage sales per capita is very small, which suggests that it is statistically significant in providing information in predicting the region’s diabetes prevalence rate. The R-squared value is 0.979, which means the data is well fitted to the regression line, and 97.9% variability in prevalence can be explained by retail sales. We hence conclude that beverage retails sales can significantly affect the region’s diabetes prevalence rate. We therefore can reject the null hypothesis.
+				</p>
+                <p class="lead mb-4 font-weight-normal text-black">The result suggests that one particular component of diet we should pay attention to is beverages.
+                    Sweetened sodas and lattes don't generate the same feelings of satiety as solid foods do, and most of the extra calories come from sugar and fat.
+
+                </p>
+				<div class="mt-5 clearfix">
+					<ul class="float-left list-inline tag-option">
+						<li class="list-inline-item"><a href="#">Beverage</a></li>
+						<li class="list-inline-item"><a href="#">Retail</a></li>
+						<li class="list-inline-item"><a href="#">Diabetes</a></li>
+					</ul>
+
+					<ul class="float-right list-inline">
+						<li class="list-inline-item"> Share: </li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-pinterest" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#" target="_blank"><i class="icofont-linkedin" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+</div>
+            </div>
+<!--            <div class="col-lg-4">-->
+<!--                <div class="sidebar-wrap pl-lg-4 mt-5 mt-lg-0">-->
+<!--&lt;!&ndash;	<div class="sidebar-widget search  mb-3 ">&ndash;&gt;-->
+<!--&lt;!&ndash;		<h5>Search Here</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;		<form action="#" class="search-form">&ndash;&gt;-->
+<!--&lt;!&ndash;			<input type="text" class="form-control" placeholder="search">&ndash;&gt;-->
+<!--&lt;!&ndash;			<i class="ti-search"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;		</form>&ndash;&gt;-->
+<!--&lt;!&ndash;	</div>&ndash;&gt;-->
+
+
+<!--	<div class="sidebar-widget latest-post mb-3">-->
+<!--		<h5>Popular Posts</h5>-->
+
+<!--        <div class="py-2">-->
+<!--        	<span class="text-sm text-muted">03 Mar 2018</span>-->
+<!--            <h6 class="my-2"><a href="#">Thoughtful living in los Angeles</a></h6>-->
+<!--        </div>-->
+
+<!--        <div class="py-2">-->
+<!--       		<span class="text-sm text-muted">03 Mar 2018</span>-->
+<!--            <h6 class="my-2"><a href="#">Vivamus molestie gravida turpis.</a></h6>-->
+<!--        </div>-->
+
+<!--        <div class="py-2">-->
+<!--        	<span class="text-sm text-muted">03 Mar 2018</span>-->
+<!--            <h6 class="my-2"><a href="#">Fusce lobortis lorem at ipsum semper sagittis</a></h6>-->
+<!--        </div>-->
+<!--	</div>-->
+
+<!--	<div class="sidebar-widget category mb-3">-->
+<!--		<h5 class="mb-4">Categories</h5>-->
+
+<!--		<ul class="list-unstyled">-->
+<!--		  <li class="align-items-center">-->
+<!--		    <a href="#">Medicine</a>-->
+<!--		    <span>(14)</span>-->
+<!--		  </li>-->
+<!--		  <li class="align-items-center">-->
+<!--		    <a href="#">Equipments</a>-->
+<!--		    <span>(2)</span>-->
+<!--		  </li>-->
+<!--		  <li class="align-items-center">-->
+<!--		    <a href="#">Heart</a>-->
+<!--		    <span>(10)</span>-->
+<!--		  </li>-->
+<!--		  <li class="align-items-center">-->
+<!--		    <a href="#">Free counselling</a>-->
+<!--		    <span>(5)</span>-->
+<!--		  </li>-->
+<!--		  <li class="align-items-center">-->
+<!--		    <a href="#">Lab test</a>-->
+<!--		    <span>(5)</span>-->
+<!--		  </li>-->
+<!--		</ul>-->
+<!--	</div>-->
+
+
+<!--	<div class="sidebar-widget tags mb-3">-->
+<!--		<h5 class="mb-4">Tags</h5>-->
+
+<!--		<a href="#">Doctors</a>-->
+<!--		<a href="#">agency</a>-->
+<!--		<a href="#">company</a>-->
+<!--		<a href="#">medicine</a>-->
+<!--		<a href="#">surgery</a>-->
+<!--		<a href="#">Marketing</a>-->
+<!--		<a href="#">Social Media</a>-->
+<!--		<a href="#">Branding</a>-->
+<!--		<a href="#">Laboratory</a>-->
+<!--	</div>-->
+
+
+<!--	<div class="sidebar-widget schedule-widget mb-3">-->
+<!--		<h5 class="mb-4">Time Schedule</h5>-->
+
+<!--		<ul class="list-unstyled">-->
+<!--		  <li class="d-flex justify-content-between align-items-center">-->
+<!--		    <a href="#">Monday - Friday</a>-->
+<!--		    <span>9:00 - 17:00</span>-->
+<!--		  </li>-->
+<!--		  <li class="d-flex justify-content-between align-items-center">-->
+<!--		    <a href="#">Saturday</a>-->
+<!--		    <span>9:00 - 16:00</span>-->
+<!--		  </li>-->
+<!--		  <li class="d-flex justify-content-between align-items-center">-->
+<!--		    <a href="#">Sunday</a>-->
+<!--		    <span>Closed</span>-->
+<!--		  </li>-->
+<!--		</ul>-->
+
+<!--		<div class="sidebar-contatct-info mt-4">-->
+<!--			<p class="mb-0">Need Urgent Help?</p>-->
+<!--			<h3>+23-4565-65768</h3>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--</div>-->
+<!--            </div>   -->
+<!--        </div>-->
+    </div>
+</section>
+
+
+<!--&lt;!&ndash; footer Start &ndash;&gt;-->
+<!--<footer class="footer section gray-bg">-->
+<!--	<div class="container">-->
+<!--		<div class="row">-->
+<!--			<div class="col-lg-4 mr-auto col-sm-6">-->
+<!--				<div class="widget mb-5 mb-lg-0">-->
+<!--					<div class="logo mb-4">-->
+<!--						<img src="images/logo.png" alt="" class="img-fluid">-->
+<!--					</div>-->
+<!--					<p>Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad eos obcaecati tenetur veritatis eveniet distinctio possimus.</p>-->
+
+<!--					<ul class="list-inline footer-socials mt-4">-->
+<!--						<li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="icofont-facebook"></i></a></li>-->
+<!--						<li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="icofont-twitter"></i></a></li>-->
+<!--						<li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="icofont-linkedin"></i></a></li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--			<div class="col-lg-2 col-md-6 col-sm-6">-->
+<!--				<div class="widget mb-5 mb-lg-0">-->
+<!--					<h4 class="text-capitalize mb-3">Department</h4>-->
+<!--					<div class="divider mb-4"></div>-->
+
+<!--					<ul class="list-unstyled footer-menu lh-35">-->
+<!--						<li><a href="#">Surgery </a></li>-->
+<!--						<li><a href="#">Wome's Health</a></li>-->
+<!--						<li><a href="#">Radiology</a></li>-->
+<!--						<li><a href="#">Cardioc</a></li>-->
+<!--						<li><a href="#">Medicine</a></li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--			<div class="col-lg-2 col-md-6 col-sm-6">-->
+<!--				<div class="widget mb-5 mb-lg-0">-->
+<!--					<h4 class="text-capitalize mb-3">Support</h4>-->
+<!--					<div class="divider mb-4"></div>-->
+
+<!--					<ul class="list-unstyled footer-menu lh-35">-->
+<!--						<li><a href="#">Terms & Conditions</a></li>-->
+<!--						<li><a href="#">Privacy Policy</a></li>-->
+<!--						<li><a href="#">Company Support </a></li>-->
+<!--						<li><a href="#">FAQuestions</a></li>-->
+<!--						<li><a href="#">Company Licence</a></li>-->
+<!--					</ul>-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--			<div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--				<div class="widget widget-contact mb-5 mb-lg-0">-->
+<!--					<h4 class="text-capitalize mb-3">Get in Touch</h4>-->
+<!--					<div class="divider mb-4"></div>-->
+
+<!--					<div class="footer-contact-block mb-4">-->
+<!--						<div class="icon d-flex align-items-center">-->
+<!--							<i class="icofont-email mr-3"></i>-->
+<!--							<span class="h6 mb-0">Support Available for 24/7</span>-->
+<!--						</div>-->
+<!--						<h4 class="mt-2"><a href="tel:+23-345-67890">Support@email.com</a></h4>-->
+<!--					</div>-->
+
+<!--					<div class="footer-contact-block">-->
+<!--						<div class="icon d-flex align-items-center">-->
+<!--							<i class="icofont-support mr-3"></i>-->
+<!--							<span class="h6 mb-0">Mon to Fri : 08:30 - 18:00</span>-->
+<!--						</div>-->
+<!--						<h4 class="mt-2"><a href="tel:+23-345-67890">+23-456-6588</a></h4>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--		-->
+<!--		<div class="footer-btm py-4 mt-5">-->
+<!--			<div class="row align-items-center justify-content-between">-->
+<!--				<div class="col-lg-6">-->
+<!--					<div class="copyright">-->
+<!--						&copy; Copyright Reserved to <span class="text-color">Novena</span> by <a href="https://themefisher.com/" target="_blank">Themefisher</a>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-lg-6">-->
+<!--					<div class="subscribe-form text-lg-right mt-5 mt-lg-0">-->
+<!--						<form action="#" class="subscribe">-->
+<!--							<input type="text" class="form-control" placeholder="Your Email address">-->
+<!--							<a href="#" class="btn btn-main-2 btn-round-full">Subscribe</a>-->
+<!--						</form>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+
+<!--			<div class="row">-->
+<!--				<div class="col-lg-4">-->
+<!--					<a class="backtop js-scroll-trigger" href="#top">-->
+<!--						<i class="icofont-long-arrow-up"></i>-->
+<!--					</a>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</footer>-->
+<!--   -->
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.js"></script>
+    <!-- Bootstrap 4.3.2 -->
+    <script src="plugins/bootstrap/js/popper.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/counterup/jquery.easing.js"></script>
+    <!-- Slick Slider -->
+    <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Counterup -->
+    <script src="plugins/counterup/jquery.waypoints.min.js"></script>
+    
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/counterup/jquery.counterup.min.js"></script>
+    <!-- Google Map -->
+    <script src="plugins/google-map/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>    
+    
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(function(){
+		$(".headerpage").load('header.html');
+		$(".footerpage").load("footer.html");
+	});
+</script>
+  </body>
+  </html>
